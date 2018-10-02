@@ -1,0 +1,9 @@
+{
+	"class" : {
+		"createApi:inCategory:" : "KazunoriUeda 10/2/2018 15:58",
+		"createClassesFromResource:underParentClass:withClassNamePrefix:inCategory:comment:" : "KazunoriUeda 10/2/2018 15:58",
+		"createMethodFromMethodDef:inClass:named:" : "KazunoriUeda 10/2/2018 15:58",
+		"createMethodsFromApiDef:inClass:" : "RichardPrinz 5/12/2014 17:27",
+		"createSourceFromMethodDef:named:" : "KazunoriUeda 10/2/2018 09:47" },
+	"instance" : {
+		 } }
