@@ -1,3 +1,0 @@
-accessing
-btnCopyLabel
-	^ 'Copy URL'

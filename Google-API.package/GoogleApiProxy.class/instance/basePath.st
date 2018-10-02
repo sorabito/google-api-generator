@@ -1,3 +1,0 @@
-api
-basePath
-	self subclassResponsibility 

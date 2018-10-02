@@ -1,3 +1,0 @@
-api
-apiName
-	self subclassResponsibility

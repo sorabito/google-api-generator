@@ -1,3 +1,0 @@
-accessing
-btnOkClick
-	window delete
