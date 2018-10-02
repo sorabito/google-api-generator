@@ -1,0 +1,3 @@
+authentication
+authenticationCredentialsBaseDirectory
+	^ FileSystem workingDirectory.

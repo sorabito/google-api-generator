@@ -1,4 +1,4 @@
-as yet unclassified
+actions
 createMethodsFromApiDef: apiDef inClass: aClass
 	| methods cnt |
 	

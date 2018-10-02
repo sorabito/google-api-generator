@@ -1,4 +1,4 @@
-as yet unclassified
+actions
 createApi: apiDiscoveryObj inCategory: apiClassCategory
 	| apiDefUrl apiDef apiDefObj apiName apiClassName apiAuth proxy url rootUrl des ver doc src |
 	
@@ -29,7 +29,7 @@ createApi: apiDiscoveryObj inCategory: apiClassCategory
 	doc ifNotNil: [ des := des, 'Documentation: ', doc, String cr ].
 
 	" create base class for this api "	
-	apiClassName := 'Google', apiName capitalized, 'Api'.
+	apiClassName := self defaultClassNamePrefix,  'Google', apiName capitalized, 'Api'.
 	proxy := GaGoogleApiTools 
 		createClassNamed: apiClassName 
 		in: apiClassCategory

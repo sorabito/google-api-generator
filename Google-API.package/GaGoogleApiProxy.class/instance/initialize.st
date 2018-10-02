@@ -1,27 +1,9 @@
-as yet unclassified
+initialize-release
 initialize
 	super initialize.
+	methodActions := { 
+		#GET -> #get:token:.
+		#PUT -> #put:token:.
+		#POST -> #post:token:.
+	 } asDictionary 
 	
-	methodAction := Dictionary new.
-	
-	methodAction at: #GET put: [ :apiUrl :token || url req |
-		url := ( ZnUrl fromString: apiUrl )
-			queryAt: 'access_token' put: token;
-			yourself.		
-		req := ( ZnRequest get: url ).
-		req ].
-	
-	methodAction at: #PUT put: [ :apiUrl :token || url req |
-		url := ( ZnUrl fromString: apiUrl )
-			queryAt: 'access_token' put: token;
-			yourself.		
-		req := ( ZnRequest put: url ).
-		req ].
-	
-	methodAction at: #POST put: [ :apiUrl :token || url req |
-		url := ( ZnUrl fromString: apiUrl )
-			queryAt: 'access_token' put: token;
-			yourself.		
-		req := ( ZnRequest post: url ).
-		req ].
-

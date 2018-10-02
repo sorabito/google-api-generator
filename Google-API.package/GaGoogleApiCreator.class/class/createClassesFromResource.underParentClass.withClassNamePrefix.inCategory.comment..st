@@ -1,4 +1,4 @@
-as yet unclassified
+actions
 createClassesFromResource: anApiDef underParentClass: aClass withClassNamePrefix: aClassNamePrefix inCategory: aClassCategory comment: aComment
 
 	| res prefix |

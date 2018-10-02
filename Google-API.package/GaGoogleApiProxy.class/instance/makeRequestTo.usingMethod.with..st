@@ -1,17 +1,16 @@
 api
 makeRequestTo: aUrl usingMethod: httpMethod with: aParamDictionary
-	| a  req res client returnCode auth content  |
+	| answerSelector  req res client returnCode auth content  a |
 	
 	session ifNil: [
 		self error: 'Authenticate API first with #authenticate' ].
 
-	a := methodAction at: httpMethod ifAbsent: [
-		self error: 'Unsupported http method (', httpMethod, ')' ].
+	answerSelector := self methodActions at: httpMethod ifAbsent: [ self error: 'Unsupported http method (', httpMethod, ')' ].
 
 	client := ZnClient new.
 	
 	" create request "
-	req := a value: aUrl value: ( session accessToken ).
+	req := self perform: answerSelector with: aUrl with: session accessToken.
 	
 	client
 		request: req;
@@ -21,9 +20,10 @@ makeRequestTo: aUrl usingMethod: httpMethod with: aParamDictionary
 		req entity: GaMultiPartMixedEntity new.
 		client request url queryAt: 'uploadType' add: 'multipart'.
 		
-		content := aParamDictionary at: 'CONTENT' ifAbsent: [ ].
-		aParamDictionary removeKey: 'CONTENT' ifAbsent: [ ].
-		content := ( Base64MimeConverter mimeEncode: content readStream ) contents.		
+		aParamDictionary at: 'CONTENT' ifPresent: [ :cont |
+			aParamDictionary removeKey: 'CONTENT' ifAbsent: [ ].
+			content := ( Base64MimeConverter mimeEncode: cont readStream ) contents.
+		].		
 		contentMime := aParamDictionary at: 'mimeType' ifAbsent: [ 'application/octet-stream' ].		
 		json := NeoJSONWriter toString: aParamDictionary.
 		

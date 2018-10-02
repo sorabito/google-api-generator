@@ -10,7 +10,7 @@
 		"session",
 		"registrationCredentialsFile",
 		"authenticationCredentialsFile",
-		"methodAction" ],
+		"methodActions" ],
 	"name" : "GaGoogleApiProxy",
 	"pools" : [
 		 ],
