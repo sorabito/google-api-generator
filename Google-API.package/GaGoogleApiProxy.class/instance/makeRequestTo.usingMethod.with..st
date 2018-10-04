@@ -1,6 +1,6 @@
 api
 makeRequestTo: aUrl usingMethod: httpMethod with: aParamDictionary
-	| answerSelector  req res client returnCode auth content  a |
+	| answerSelector  req res client returnCode auth content |
 	
 	session ifNil: [
 		self error: 'Authenticate API first with #authenticate' ].
@@ -66,7 +66,7 @@ st inspect."
 				auth := self authenticateRefresh.
 
 				" recreate url with frefreshed tokens and repeat request "
-				req := a value: aUrl value: ( session accessToken ).
+				req := self perform: answerSelector with: aUrl with: session accessToken.
 				res := client
 					request: req;
 					execute.
