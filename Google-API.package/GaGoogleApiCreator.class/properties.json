@@ -1,14 +1,13 @@
 {
+	"commentStamp" : "RichardPrinz 3/4/2015 17:21",
+	"super" : "Object",
 	"category" : "Google-API",
 	"classinstvars" : [
-		"defaultClassNamePrefix" ],
-	"classvars" : [
-		 ],
-	"commentStamp" : "RichardPrinz 3/4/2015 17:21",
-	"instvars" : [
-		 ],
+		"defaultClassNamePrefix"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
 	"name" : "GaGoogleApiCreator",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}
