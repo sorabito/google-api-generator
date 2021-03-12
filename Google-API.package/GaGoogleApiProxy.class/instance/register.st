@@ -6,7 +6,7 @@ register
 	
 	session := ZnGoogleOAuth2Session google: self registrationCredentials.
 	session beOfflineAccessType;
-		beNonePrompt;
+		forceApprovalPrompt;
 		scopes: ( self scopes ).
 
 	url := session authenticationUrl.
