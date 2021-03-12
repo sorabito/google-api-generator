@@ -1,18 +1,26 @@
 {
-	"category" : "Google-API",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "RichardPrinz 3/4/2015 17:06",
+	"super" : "Object",
+	"category" : "Google-API",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"id",
 		"session",
 		"registrationCredentialsFile",
 		"authenticationCredentialsFile",
+<<<<<<< HEAD:Google-API.package/GaGoogleApiProxy.class/properties.json
 		"methodActions" ],
 	"name" : "GaGoogleApiProxy",
 	"pools" : [
 		 ],
 	"super" : "Object",
 	"type" : "normal" }
+=======
+		"methodAction"
+	],
+	"name" : "GoogleApiProxy",
+	"type" : "normal"
+}
+>>>>>>> feature/AS-11560:Google-API.package/GoogleApiProxy.class/properties.json

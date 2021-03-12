@@ -1,14 +1,19 @@
 {
-	"category" : "Google-API",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "RichardPrinz 3/4/2015 17:07",
+<<<<<<< HEAD:Google-API.package/GaGoogleApiTools.class/properties.json
 	"instvars" : [
 		 ],
 	"name" : "GaGoogleApiTools",
 	"pools" : [
 		 ],
+=======
+>>>>>>> feature/AS-11560:Google-API.package/GoogleApiTools.class/properties.json
 	"super" : "Object",
-	"type" : "normal" }
+	"category" : "Google-API",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GoogleApiTools",
+	"type" : "normal"
+}

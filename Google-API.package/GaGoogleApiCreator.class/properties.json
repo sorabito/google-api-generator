@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD:Google-API.package/GaGoogleApiCreator.class/properties.json
 	"category" : "Google-API",
 	"classinstvars" : [
 		"defaultClassNamePrefix" ],
@@ -10,5 +11,15 @@
 	"name" : "GaGoogleApiCreator",
 	"pools" : [
 		 ],
+=======
+	"commentStamp" : "RichardPrinz 3/4/2015 17:21",
+>>>>>>> feature/AS-11560:Google-API.package/GoogleApiCreator.class/properties.json
 	"super" : "Object",
-	"type" : "normal" }
+	"category" : "Google-API",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GoogleApiCreator",
+	"type" : "normal"
+}

@@ -1,14 +1,19 @@
 {
-	"category" : "Google-API",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "RichardPrinz 3/4/2015 17:20",
+<<<<<<< HEAD:Google-API.package/GaMultiPartMixedEntity.class/properties.json
 	"instvars" : [
 		 ],
 	"name" : "GaMultiPartMixedEntity",
 	"pools" : [
 		 ],
+=======
+>>>>>>> feature/AS-11560:Google-API.package/ZnMultiPartMixedEntity.class/properties.json
 	"super" : "ZnMultiPartFormDataEntity",
-	"type" : "normal" }
+	"category" : "Google-API",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ZnMultiPartMixedEntity",
+	"type" : "normal"
+}
