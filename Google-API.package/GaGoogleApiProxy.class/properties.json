@@ -1,18 +1,17 @@
 {
-	"category" : "Google-API",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "RichardPrinz 3/4/2015 17:06",
+	"super" : "Object",
+	"category" : "Google-API",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"id",
 		"session",
 		"registrationCredentialsFile",
 		"authenticationCredentialsFile",
-		"methodActions" ],
+		"methodActions"
+	],
 	"name" : "GaGoogleApiProxy",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}

@@ -1,12 +1,13 @@
 {
+	"instance" : { },
 	"class" : {
-		"createApi:inCategory:" : "KazunoriUeda 10/2/2018 16:28",
 		"createClassesFromResource:underParentClass:withClassNamePrefix:inCategory:comment:" : "KazunoriUeda 10/2/2018 15:58",
 		"createMethodFromMethodDef:inClass:named:" : "KazunoriUeda 10/2/2018 15:58",
-		"createMethodsFromApiDef:inClass:" : "RichardPrinz 5/12/2014 17:27",
 		"createSourceFromMethodDef:named:" : "KazunoriUeda 10/2/2018 09:47",
-		"defaultClassNamePrefix" : "KazunoriUeda 10/2/2018 16:24",
+		"initialize" : "KazunoriUeda 10/2/2018 16:24",
 		"defaultClassNamePrefix:" : "KazunoriUeda 10/2/2018 16:23",
-		"initialize" : "KazunoriUeda 10/2/2018 16:24" },
-	"instance" : {
-		 } }
+		"defaultClassNamePrefix" : "KazunoriUeda 10/2/2018 16:24",
+		"createMethodsFromApiDef:inClass:" : "RichardPrinz 5/12/2014 17:27",
+		"createApi:inCategory:" : "KazunoriUeda 10/2/2018 16:28"
+	}
+}
